@@ -1,0 +1,6 @@
+FROM wordpress:latest
+
+COPY ./wp-content/themes/vermeer /var/www/html/wp-content/themes/vermeer
+COPY wp-config.php /var/www/html/wp-config.php
+COPY wp-content /var/www/html/wp-content
+COPY php.ini /usr/local/etc/php/php.ini
